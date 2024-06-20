@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="home">
+            <div class="profile_name">
+                Mike Honen
+                <div class="contact_info">
+                    <img src="images/envelope.png" alt="email"> 
+                    myemail@someemail.com
+                </div>
+                <div style="clear:both"></div> 
+                <div class="contact_info">
+                    <img src="images/phone.png" alt="phone"> 
+                    123-456-7890
+                </div>
+            </div>
+            <div class="topdiv">
+                <a class="top_menu" href="#about-me">About Me</a>
+                <a class="top_menu" href="#skills">Skills</a>
+                <a class="top_menu" href="#Projects">Projects</a>
+                <a class="top_menu" href="#Recommendations">Reccomendations</a>
+            </div>
+        </div>
+    </nav>
+    <section id="about-me" class="container">
+        <div>
+            <img src="images/profile.jpg" class="profile_image">
+        </div>
+
+        <div>
+            <h1>Hi, I'm Mike Honen</h1>
+            <p>I am currently studying Data Science and Machine Learning courses.
+                I have two years of experience in the IT industry and have worked in various roles.
+                I have a passion for data and I am looking to transition into a data analyst role.
+            </p>
+        </div>
+    </section>  
+    <section id="skills">
+        <h2>Skills</h2>
+        <div style="clear:both"></div>
+        <div class="all_skills">
+            <div class="skill">
+                <img src="images/html5.png" alt="html5">
+                <h6>HTML5</h6>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/css3.png" alt="css3">
+                <h6>CSS3</h6>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/javascript.png" alt="javascript">
+                <h6>Javascript</h6>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/python.png" alt="python">
+                <h6>Python</h6>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/r.png" alt="R">
+                <h6>R</h6>
+                <p>6 months Experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/SQL.png" alt="SQL">
+                <h6>SQL</h6>
+                <p>6 months Experience</p>
+            </div>
+        </div> 
+    </section>
+    <section class="projects" id="Projects">
+        <h2>Projects</h2>
+        <div style="clear:both"></div>
+        <div id="projects-container" class="projects-container">
+            <div class="project_card">
+                <h3>Dashboard</h3>
+                <ul>
+                    <li>Created a sales dahboard using python and the TKInter library.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project_card">
+                <h3>Web Scraper</h3>
+                <ul>
+                    <li>Created a web scraper using Python and the BeautifulSoup library.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project_card">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Created a machine learning model using the scikit-learn library in Python.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div style="clear:both"></div>
+    <section id="Recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both"></div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Mike has a vast knowledge in data science and machine learning.
+                <span>&#8221;</span>
+                <br/><br/>Joe Doe
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Mike's data presentations shows that his talent goes far beyond his years of experience.
+                <span>&#8221;</span>
+                <br/><br/>Jane Smith
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Mike's attention to detail far exceeds expectations.
+                <span>&#8221;</span>
+                <br/><br/>Jerry Doe
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="flex_center">
+            <fieldset>
+                <legend class="introduction">Leave a Reccomendation</legend>
+                <input id="new_recommendation_name" type="text" placeholder="Name (Optional)"><br/>
+                <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                <div class="flex_center">
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <div class="iconbutton">
+        <a href="#home"><img class = "icon_image" src="images/up-arrow.png" width = "50" alt="up-arrow"/>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a> 
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+        <img src="images/tick-symbol.svg"/>
+        <h3>Thanks for the Recommendation</h3>
+        <button>OK</button>   
+    </div>
+</body>
+</html>
