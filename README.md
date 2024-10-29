@@ -1,2 +1,2 @@
 # portfoliov2
-Second attempt at building my owm web page portfolio
+Second attempt at building my own web page portfolio
